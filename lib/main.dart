@@ -14,15 +14,15 @@ class MyHomePage extends StatelessWidget {
           slivers: <Widget>[
             new SliverAppBar(
               backgroundColor: Colors.green,
-              expandedHeight: 140,
+              expandedHeight: 138,
               floating: true,
               pinned: true,
               flexibleSpace: new FlexibleSpaceBar(
-                title: new Text("Sliver Appbar",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                title: new Text("Sliver Appbar",style: TextStyle(fontSize: 21,fontWeight: FontWeight.bold),),
               ),
             ),
             new SliverFixedExtentList(
-              itemExtent: 60,
+              itemExtent: 100,
               delegate: new SliverChildBuilderDelegate((context,index)=>new ListTile(
                 title: new Text("List item $index",style: TextStyle(fontWeight:FontWeight.bold,),),
                 trailing: Icon(Icons.list),
